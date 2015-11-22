@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.diane.brackelope.Main210Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Tournament"
+            android:id="@+id/textView58"
+            android:textSize="38dp" />
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView2"
+            android:layout_gravity="center_horizontal|right"
+            android:queryHint="Find Team" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="[#] Teams Selected"
+            android:id="@+id/textView61"
+            android:layout_gravity="left|center_horizontal"
+            android:textColor="#000000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="2"
+            android:layout_gravity="center_horizontal"
+            android:nestedScrollingEnabled="false"
+            android:useDefaultMargins="false" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   [Team Name]   "
+                android:id="@+id/button17"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:onClick="TeamName2"
+                android:background="#d6d7d7"
+                android:layout_gravity="fill" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:src="@android:drawable/ic_menu_mapmode"
+                android:onClick="TeamName2"
+                android:background="#d6d7d7"
+                android:layout_gravity="fill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Manager"
+                android:id="@+id/textView59"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  [Team Manager Name]  "
+                android:id="@+id/button18"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:textSize="12dp"
+                android:background="#d6d7d7"
+                android:layout_gravity="fill" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_gravity="center_horizontal|fill"
+                android:background="#d6d7d7" />
+        </GridLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Tournament"
+            android:id="@+id/button16"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+</RelativeLayout>
